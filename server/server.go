@@ -59,7 +59,7 @@ func (s *Server) connectionString() string {
 	return fmt.Sprintf("http://%s:%d", s.host, s.port)
 }
 
-// Starts the server.
+// ListenAndServe starts the server.
 func (s *Server) ListenAndServe(leader string) error {
 	var err error
 

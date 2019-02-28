@@ -17,7 +17,7 @@ func New() *DB {
 	}
 }
 
-// Retrieves the value for a given key.
+// Get retrieves the value for a given key.
 func (db *DB) Get(key string) string {
 	db.mutex.RLock()
 	defer db.mutex.RUnlock()
